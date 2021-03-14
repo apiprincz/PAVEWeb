@@ -4,6 +4,11 @@ import RightColumn from "../Components/RightColumn";
 import dynamic from "next/dynamic";
 import { getData } from "../util/fetchData";
 
+const DynamicComponentWithNoSSR = dynamic(
+  () => import("../Components/Scanner"),
+  { ssr: false }
+);
+
 const scan = (props) => {
   const [data, setData] = useState(props.winners);
 

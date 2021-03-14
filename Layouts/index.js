@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../Components/Sidebar";
 
 export default function IndexLayout({ children, props }) {
   return (
