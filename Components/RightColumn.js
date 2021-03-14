@@ -5,7 +5,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Chart from "../Components/Charts";
-import Styles from "../styles/Rightcol.module.css";
 import Logdata from "./Logdata";
 import Searchdata from "./Searchdata";
 import Reportdata from "./Reportdata";

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import Link from "next/Link";
+import Link from "next/link";
 
 const Pagination = (props) => {
   const [previd, setPrevid] = useState(1);
