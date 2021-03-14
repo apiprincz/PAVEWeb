@@ -1,0 +1,31 @@
+.upload {
+  position: relative;
+}
+.uploadContainer {
+  margin-right: 20px;
+  background: #f5fbfc;
+  margin-top: 20px;
+}
+.upload svg {
+  padding-bottom: 20px;
+  width: 13px;
+  position: relative;
+  color: gray;
+}
+.upload::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: grey;
+  position: absolute;
+  bottom: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+.moreBtn svg {
+  padding-bottom: 22px;
+  width: 20px;
+  position: relative;
+  color: gray;
+}

@@ -1,0 +1,16 @@
+.faqTab svg {
+  width: 27px;
+  height: 17px;
+  color: gray;
+}
+.faqAnswer {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.faqShow {
+  display: block;
+  opacity: 1;
+  height: auto;
+  width: 100%;
+}

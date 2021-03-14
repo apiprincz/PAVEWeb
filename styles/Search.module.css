@@ -1,0 +1,14 @@
+.search {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.search svg {
+  color: gray;
+  transform: rotate(90deg);
+}
+.query {
+  width: 50%;
+  height: 300px;
+  border: 1px solid gray;
+}

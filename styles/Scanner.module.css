@@ -1,0 +1,12 @@
+.Scanner {
+  width: 30%;
+  margin: 0 auto;
+}
+.Scanner button {
+  width: 100%;
+  background: #38778a;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+}

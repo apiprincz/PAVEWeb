@@ -1,0 +1,32 @@
+.Overview {
+  width: 100%;
+}
+.OverviewWindow {
+  width: 100%;
+}
+.OverviewCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.OverviewCard {
+  display: flex;
+
+  justify-content: space-between;
+  background-color: #0c274d;
+  width: 260px;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  height: 190px;
+}
+.OverviewCard:nth-child(2) {
+  background-color: #12504a;
+}
+.OverviewCard:nth-child(3) {
+  background-color: #5a221b;
+}
+.OverviewHistory {
+  width: 100%;
+}
