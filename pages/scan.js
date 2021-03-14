@@ -4,11 +4,6 @@ import RightColumn from "../Components/RightColumn";
 import dynamic from "next/dynamic";
 import { getData } from "../util/fetchData";
 
-const DynamicComponentWithNoSSR = dynamic(
-  () => import("../components/Scanner"),
-  { ssr: false }
-);
-
 const scan = (props) => {
   const [data, setData] = useState(props.winners);
 
@@ -25,7 +20,6 @@ const scan = (props) => {
                   Place your scanner on the QR code.<br></br> Capture the code
                   on the screen <br></br> Listen, download and share
                 </p>
-                <DynamicComponentWithNoSSR />
               </div>
             </div>
             <div className="col-md-4">
