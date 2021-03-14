@@ -1,4 +1,4 @@
-import { server } from "../config";
+const server = process.env.SERVER;
 
 export const getData = async (url) => {
   const res = await fetch(`${server}/api/${url}`, {
