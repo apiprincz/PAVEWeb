@@ -25,6 +25,7 @@ const scan = (props) => {
                   Place your scanner on the QR code.<br></br> Capture the code
                   on the screen <br></br> Listen, download and share
                 </p>
+                <DynamicComponentWithNoSSR />
               </div>
             </div>
             <div className="col-md-4">
