@@ -1,4 +1,4 @@
-const server = process.env.SERVER;
+const server = process.env.NEXT_PUBLIC_SERVER;
 
 export const getData = async (url) => {
   const res = await fetch(`${server}/api/${url}`, {
