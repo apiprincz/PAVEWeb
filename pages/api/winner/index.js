@@ -1,5 +1,5 @@
 import dbConnect from "../../../util/dbConnect";
-import Winners from "../../../models/winnerModel";
+import Winners from "../../../models/winnerModel.js";
 
 import dotenv from "dotenv";
 
