@@ -1,7 +1,8 @@
 import dbConnect from "../../../util/dbConnect";
+import Winners from "../../../models/winnerModel";
+
 import dotenv from "dotenv";
 
-import Winners from "../../../Models/winnerModel";
 import Cors from "cors";
 
 dotenv.config({ path: "ENV_FILENAME" });
