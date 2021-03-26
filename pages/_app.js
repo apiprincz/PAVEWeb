@@ -25,15 +25,17 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
           crossOrigin="anonymous"
         ></script>
-        <script src="jspdf.min.js" crossOrigin="anonymous"></script>
+        {/* <script src="jspdf.min.js" crossOrigin="anonymous"></script> */}
         <script
           src="jspdf.plugin.autotable.min.js"
           crossOrigin="anonymous"
         ></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.0/jspdf.umd.min.js"
           crossOrigin="anonymous"
         ></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
       </Head>
       <Component {...pageProps} />
     </>
