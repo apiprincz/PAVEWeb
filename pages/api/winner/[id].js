@@ -1,7 +1,7 @@
 import dbConnect from "../../../util/dbConnect";
 import dotenv from "dotenv";
 
-import Products from "../../../Models/productModel";
+import Products from "../../../models/productModel";
 import Cors from "cors";
 
 dotenv.config({ path: "ENV_FILENAME" });
