@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import History from "../Components/History";
 import RightColumn from "../Components/RightColumn";
 import { getData } from "../util/fetchData";
+import dotenv from "dotenv";
 
 library.add(fas);
 const overview = (props) => {
@@ -124,6 +125,11 @@ const overview = (props) => {
 };
 
 export async function getServerSideProps(context) {
+  if (typeof window === "undefined") {
+    dotenv.config({ path: "ENV_FILENAME" });
+  }
+  dotenv.config({ path: "ENV_FILENAME" });
+
   const res = await getData("winner");
   // const data = await res.json();
   // console.log(res);
