@@ -9,10 +9,10 @@ const dbConnect = () => {
   }
   dotenv.config({ path: "ENV_FILENAME" });
   return (
-    mongoose.connect(process.env.NEXT_PUBLIC_MONGODB_URL, {
+    mongoose.connect(process.env.NEXT_PUBLIC_MONGO_URL, {
       auth: {
-        user: process.env.MONGODB_USER,
-        password: process.env.MONGODB_PASS,
+        user: process.env.MONGO_USER,
+        password: process.env.MONGO_PASS,
       },
       useNewUrlParser: true,
       useUnifiedTopology: true,
