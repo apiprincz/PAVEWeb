@@ -123,7 +123,7 @@ const overview = (props) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
   const res = await getData("winner");
   // const data = await res.json();
   // console.log(res);

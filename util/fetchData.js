@@ -1,12 +1,18 @@
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const getData = async (url) => {
-  const res = await fetch(`${BASE_URL}/api/${url}`, {
+  const baseURL = `${BASE_URL}/api/${url}`;
+
+  const res = await fetch(baseURL, {
     method: "GET",
     origin: "*",
+    headers: {
+      "User-Agent": "*",
+      Accept: "application/json; charset=UTF-8",
+    },
   });
 
-  const data = await res.json();
+  const data = await res.json({});
 
   return data;
 };
