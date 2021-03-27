@@ -1,7 +1,7 @@
-const server = process.env.NEXT_PUBLIC_SERVER;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const getData = async (url) => {
-  const res = await fetch(`${server}/api/${url}`, {
+  const res = await fetch(`${BASE_URL}/api/${url}`, {
     method: "GET",
     origin: "*",
   });
@@ -11,7 +11,7 @@ export const getData = async (url) => {
   return data;
 };
 export const postData = async (url, post) => {
-  const res = await fetch(`${server}/api/${url}`, {
+  const res = await fetch(`${BASE_URL}/api/${url}`, {
     method: "POST",
     headers: {
       "content-Type": "application/json",
